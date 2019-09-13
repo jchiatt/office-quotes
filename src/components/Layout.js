@@ -3,10 +3,10 @@ import Header from "./Header"
 import Footer from "./Footer"
 import Inner from "./Inner"
 
-const Layout = ({ children }) => {
+const Layout = ({ page, children }) => {
   return (
     <>
-      <Header />
+      <Header hero={page === "/"} />
       <Inner>
         <main>{children}</main>
       </Inner>
