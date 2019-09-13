@@ -6,7 +6,7 @@ import Inner from "./Inner"
 const Layout = ({ page, children }) => {
   return (
     <>
-      <Header hero={page === "/"} />
+      {page !== "/" && <Header />}
       <Inner>
         <main>{children}</main>
       </Inner>

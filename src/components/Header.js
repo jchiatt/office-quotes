@@ -6,19 +6,21 @@ import Title from './Title';
 const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
-  height: ${({ hero }) => hero ? '160px' : '80px'};
+  height: 80px;
   background: ${({ theme }) => theme.colors.primary};
-  text-transform: uppercase;
 `;
 
 export default function Header({ hero }) {
+  // If a page uses a hero section, we won't render this header
+  if ( hero ) return null;
+
   return (
-    <HeaderContainer hero={hero}>
-      <Inner>
-        <header>
-          <Title color="white">Office Quotes</Title>
-        </header>
-      </Inner>
-    </HeaderContainer>
+      <HeaderContainer>
+        <Inner>
+          <header>
+            <Title color="white">Office Quotes</Title>
+          </header>
+        </Inner>
+      </HeaderContainer>
   )
 }
