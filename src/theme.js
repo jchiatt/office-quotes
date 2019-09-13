@@ -7,6 +7,7 @@ export default {
     primary: "#023334",
     black: "#171717",
     white: "#fdfdfd",
+    gold: "goldenrod"
   },
   maxWidth: "1000px",
 }
