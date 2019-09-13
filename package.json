@@ -16,6 +16,7 @@
     "@emotion/core": "^10.0.17",
     "@emotion/styled": "^10.0.17",
     "gatsby": "^2.15.14",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
