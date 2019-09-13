@@ -6,7 +6,7 @@ import Title from "./Title"
 const HeroContainer = styled.div`
   display: flex;
   align-items: center;
-  height: 80px;
+  height: 280px;
   background: ${({ theme }) => theme.colors.primary};
   text-align: center;
 `

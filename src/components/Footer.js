@@ -3,10 +3,7 @@ import styled from '@emotion/styled';
 import Inner from './Inner';
 
 const FooterContainer = styled.footer`
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  height: 60px;
   background: ${({ theme }) => theme.colors.black};
   color: ${({ theme }) => theme.colors.white};
 
@@ -19,20 +16,28 @@ const FooterContainer = styled.footer`
       color: ${({ theme }) => theme.colors.white};
     }
   }
+`;
+
+const FlexContainer = styled.div`
+  display: flex;
 `
 
 export default function Footer() {
   return (
     <FooterContainer>
       <Inner>
-        Made with{" "}
-        <span role="img" aria-label="heart emoji.">
-          ❤️
-        </span>{" "}
-        by{" "}
-        <a href="https://jchiatt.com" title="Visit J.C. Hiatt's portfolio.">
-          J.C. Hiatt
-        </a>
+        <FlexContainer>
+          <p>
+            Made with{" "}
+            <span role="img" aria-label="heart emoji.">
+              ❤️
+            </span>{" "}
+            by{" "}
+            <a href="https://jchiatt.com" title="Visit J.C. Hiatt's portfolio.">
+              J.C. Hiatt
+            </a>
+          </p>
+        </FlexContainer>
       </Inner>
     </FooterContainer>
   )

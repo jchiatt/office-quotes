@@ -7,6 +7,11 @@ const StyledTagline = styled.p`
   color: white;
   font-weight: bold;
   font-size: 1.25rem;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
 `
 
 export default function Tagline({ children }) {
